@@ -1,0 +1,63 @@
+/* === MENTOR START === */
+/* 1-й рівень вкладеності */
+ul>li:first-child {
+	color: red;
+}
+
+ul>li:not(:first-child) {
+	color: green;
+}
+
+/* 2-й рівень вкладеності */
+ul>li>ul>li:first-child {
+	color: blue;
+}
+
+ul>li>ul>li:not(:first-child) {
+	color: orange;
+}
+
+/* 3-й рівень вкладеності */
+ul>li>ul>li>ol>li:first-child {
+	color: #4597f7;
+}
+
+ul>li>ul>li>ol>li:not(:first-child) {
+	color: #5d5d5d;
+}
+
+/* span на 2-му рівні вкладеності */
+ul>li>ul>li>span {
+	color: #a0f0fc;
+}
+
+/* === END === */
+
+
+
+/* -=== Home Work ===- */
+.header__list,
+.article__section {
+	margin-bottom: 2rem;
+}
+
+body {
+	color: #555;
+}
+
+.title {
+	color: #000;
+}
+
+.caption,
+img {
+	color: #888;
+}
+
+ul.header__list>li.list__item>a {
+	color: #2f5fcf;
+}
+
+[class*="--optional-element"]>a {
+	color: #2f5fcf8f;
+}
